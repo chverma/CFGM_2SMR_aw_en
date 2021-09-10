@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script type="module" src="../script.js"></script>
+<link rel="stylesheet" href="../estil.css">
+
+<nav></nav>
+<header>
+    <h1>Nextcloud & EMail platforms with LDAP</h1>
+
+    <abstract>
+        <p>Here we will see how to deploy our private cloud. These services will consist of an LDAP server (OpenLDAP) for the management of our users, an e-mail server with its webmail (RoundCube) and our own platform to host files and be able to make collaborative editions of text/calc documents. (Nextcloud).
+        </p>
+    </abstract>
+</header>
+<section>
+    <h2>First step</h2>
+    <p>Clone this repo and go there.
+    </p>
+    <sc sh>
+        wget https://github.com/chverma/privateCloud/archive/refs/tags/v1.0.0.tar.gz
+
+	tar xzvf v1.0.0.tar.gz
+	cd privateCloud-1.0.0/
+    </sc>
+
+    <h2>Install the services</h2>
+    <p>Follow this video tutorial in order to deploy the LDAP, Nextcloud and EMail servicies</p>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oWkbbKMeoNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h2>Final step</h2>
+    <ol>
+	<li>Create five users: admin, boss, human-resources, financial, worker</li>
+    	<li>admin, boss and human-resources can manage all platforms as an administrator. TIP: We've to make a group.</li>
+    	<li>financial and worker have an a user account and are included in the employers group.</li>
+    </ol>
+</section>
