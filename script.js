@@ -1,4 +1,4 @@
-import {Prism} from 'prism.js';
+import {Prism} from './prism.js';
 
 document.addEventListener('DOMContentLoaded', (event) => {
   //syntax highlight
